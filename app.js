@@ -3,7 +3,7 @@ require("./dbs/conn")
 const FreelancersInfo = require("./modules/freelancers")
 const ProgDomainTechs = require("./modules/progmodel")
 var cors = require('cors')
-//import cors from 'cors';
+
 const app = express();
 const port = process.env.PORT || 5555;
 const router = require("./routers/topfreelancers")
