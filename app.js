@@ -5,12 +5,12 @@ const ProgDomainTechs = require("./modules/progmodel")
 var cors = require('cors')
 
 const app = express();
+app.use(cors())
 const port = process.env.PORT || 5555;
 const router = require("./routers/topfreelancers")
 const router1 = require("./routers/prog")
 const router2 = require("./routers/contact")
 app.use(express.json());
-app.use(cors())
 app.use(router);
 app.use(router1);
 app.use(router2);
